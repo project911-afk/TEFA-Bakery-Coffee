@@ -338,28 +338,35 @@ body {
 
 /* TAMPILAN MOBILE */
 @media (max-width: 768px) {
-
     header {
-        padding: 10px 20px;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .logo-TEFA img {
-        max-width: 130px;
-        height: auto;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        padding: 10px 16px !important;
     }
 
     .logo-TEFA {
         display: flex;
         align-items: center;
         gap: 8px;
-        flex-shrink: 1;
+        flex: 0 1 auto;
+    }
+
+    .logo-TEFA img {
+        max-width: 45px; 
+        height: auto;
+    }
+
+    .fs-4 {
+        font-size: 18px; 
+        white-space: nowrap;
     }
 
     .burger {
-        margin-left: 0;
+        display: flex !important;
         flex-shrink: 0;
+        margin-left: auto !important;
     }
 
     .card {
@@ -495,3 +502,4 @@ body {
     }
 
 }
+
