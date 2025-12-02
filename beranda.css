@@ -220,12 +220,12 @@ body {
 
 .roti-img {
     width: 550px;
-    position: relative;
-    left: 150px;
+    max-width: 100%;
+    margin-left: 50px;
 }
 
 /* Icon Gambar */
-.container {
+.icon-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -269,7 +269,7 @@ body {
     text-align: center;
     color: #fff;
 }
-.menu-favorit .container{
+.menu-favorit .menu-container{
     margin: auto;
     margin-bottom: 60px;
     text-align: center;
@@ -504,3 +504,4 @@ body {
     }
 
 }
+
