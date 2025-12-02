@@ -12,6 +12,11 @@
     font-family: "Poppins", sans-serif;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
+
 /* ========================= */
 /*      ANIMASI BURGER       */
 /* ========================= */
@@ -497,4 +502,5 @@ body {
     .footer-desc {
         text-align: center;
     }
+
 }
