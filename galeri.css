@@ -333,8 +333,27 @@ body {
 
 @media (max-width: 768px) {
 
-    .burger {
+    header {
+        padding: 10px 20px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo-TEFA img {
+        max-width: 130px;
+        height: auto;
+    }
+
+    .logo-TEFA {
         display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-shrink: 1;
+    }
+
+    .burger {
+        margin-left: 0;
+        flex-shrink: 0;
     }
 
     /* MENU DEFAULT (tertutup) */
@@ -403,3 +422,4 @@ body {
         width: 120px;
     }
 }
+
