@@ -1,0 +1,500 @@
+:root {
+    --Beranda: #F0ECD3;
+    --background: #F0ECD3;
+    --LayananFitur: #06522C;
+}
+
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ========================= */
+/*      ANIMASI BURGER       */
+/* ========================= */
+
+.burger {
+    width: 32px;
+    height: 28px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    background: none;
+    border: none;
+    margin-left: auto;
+    padding: 0;
+}
+
+.burger span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Animasi silang */
+.burger.open span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.burger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.open span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+/* ========================= */
+/*          HEADER           */
+/* ========================= */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0CAA5A;
+    padding: 12px 60px;
+    flex-direction: row;
+    flex-wrap: nowrap !important;
+}
+
+body {
+    padding-top: 80px;
+    background-color: #F0EBD3;
+}
+
+.head {
+    color: #0CAA5A;
+}
+
+.fs-4 {
+    color: whitesmoke !important;
+}
+
+/* NAV LINK */
+.nav-link {
+    color: whitesmoke !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    font-weight: 700;
+    color: whitesmoke !important;
+}
+
+.nav-link.active,
+.nav-link:focus,
+.nav-link:active {
+    color: whitesmoke !important;
+    background: transparent !important;
+    font-weight: bold;
+    box-shadow: none !important;
+}
+
+/* NAV desktop */
+.nav-menu {
+    display: flex;
+    gap: 5px;
+}
+
+/* ========================== */
+/*     HEADER MOBILE FIX      */
+/* ========================== */
+
+.logo-TEFA {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ========================= */
+/*      RESPONSIVE BURGER    */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    .burger {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background: #0CAA5A;
+        position: absolute;
+        top: 70px;
+        /* turun sedikit dari header */
+        right: 20px;
+        width: 220px;
+        padding: 15px;
+        border-radius: 10px;
+        z-index: 9999;
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+    }
+
+    .nav-menu.active {
+        display: flex !important;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+        color: white;
+        text-align: right;
+    }
+}
+
+/* Body */
+body {
+    background-color: #F0EBD3;
+    padding-top: 50px;   /* → Sesuaikan dengan tinggi header */
+}
+
+/* Text Colors */
+.head {
+    color: #0CAA5A;
+}
+
+.fs-4,
+.nav-link {
+    color: whitesmoke;
+}
+
+/* Navigation hover */
+.nav-link:hover {
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #0CAA5A;
+    color: #fff;
+}
+.hero h1 {
+    font-size: 65px;
+    font-weight:200;
+    line-height: 70px;
+    max-width: 750px;
+    margin-bottom: 20px;    
+}
+.hero .lead {
+    font-size: 38px;
+    margin-top: 25px;
+    line-height: 1.5;
+    padding-bottom: 7%;
+    white-space: nowrap;
+}
+
+.btn-produk {
+    position: relative;
+    padding-right: 28px;
+    color: #06522C;
+    font-weight: 900;
+}
+
+.btn-produk .arrow-out {
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    font-size:32px;
+    transform: translateY(-50px);
+    transition: 0.2s;
+}
+
+.roti-img {
+    width: 550px;
+    position: relative;
+    left: 150px;
+}
+
+/* Icon Gambar */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    margin-top: 75px;
+}
+
+.icon-box {
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+    background-color: #D9D9D9;
+    border-radius: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0 0 0 / 15%);
+}
+
+/* Fitur Icon Card */
+.icon-card{
+    background-color: #06522C;
+    height:375px;
+    width: 90%;
+    font-size: 20px;
+    border-radius: 15%;
+    color: #fff;
+    padding:25px;
+}
+.icon-card h5{
+    font-size: 25px;
+}
+.icon-card i{
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+/*Menu Favorit*/
+.menu-favorit{
+    background-color: #0CAA5A;
+    padding: 35px 50px;
+    text-align: center;
+    color: #fff;
+}
+.menu-favorit .container{
+    margin: auto;
+    margin-bottom: 60px;
+    text-align: center;
+    display: block;
+}
+.title{
+    font-size:40px;
+    font-weight: 800;
+}
+.sub-title{
+    font-size: 25px;
+    font-weight: 500;
+}
+.row-menu{
+    display: flex;
+    justify-content: center;
+    gap: 130px;
+    flex-wrap: wrap;
+    
+}
+.menu-card{
+    width: 275px;
+    background-color: #D9D9D9;
+    color:#06522C;
+    padding: 25px;
+    height: 275px;;
+    border-radius:20%;
+    transition: 0.2s;
+}
+.menu-card:hover{
+    transform: translateY(-5px);
+}
+.menu-img{
+    width: 140px;
+    height: 120px;
+    margin: auto;
+    border-radius: 70%;
+    background: #06522C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+.menu-img img{
+    width: 180px;
+    height: 130px;
+}
+.menu-card h4{
+    margin-top: 40px;
+    font-weight: 700;
+}
+
+/* ========================= */
+/*         FOOTER FIX        */
+/* ========================= */
+.sip-footer {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.sip-footer.footer-visible {
+    opacity: 1;
+}
+
+.sip-footer {
+    background: #0a5434;
+    color: whitesmoke;
+    padding: 50px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+    min-width: 280px;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex: 1;
+}
+
+.footer-logo {
+    width: 130px;
+    height: auto;
+    object-fit: contain;
+}
+
+.footer-text h2 {
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #0CAA5A;
+}
+
+.footer-text p {
+    max-width: 260px;
+    margin: 0;
+}
+
+.footer-kontak,
+.footer-operasional {
+    flex: 1;
+    min-width: 240px;
+    align-items: center;
+}
+
+.footer-heading {
+    color: #0CAA5A;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.footer-kontak p,
+.footer-operasional p {
+    margin-bottom: 6px;
+}
+
+.footer-section i {
+    color: #0CAA5A;
+    margin-right: 8px;
+}
+
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 35px;
+    padding-top: 25px;
+    border-top: 1px solid #8dd0aa;
+    opacity: 0.85;
+}
+
+.footer-section a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #0CAA5A;
+}
+
+/* TAMPILAN MOBILE */
+@media (max-width: 768px) {
+
+    .burger {
+        display: flex;
+    }
+
+    /* MENU DEFAULT (tertutup) */
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        width: 210px;
+        padding: 18px;
+
+        background: rgba(12, 170, 90, 0.90);
+        backdrop-filter: blur(8px);
+        border-radius: 14px;
+
+        opacity: 0;
+        transform: translateY(-12px);
+        pointer-events: none;
+
+        transition: opacity 0.25s ease, transform 0.25s ease;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.20);
+    }
+
+    /* MENU SAAT AKTIF */
+    .nav-menu.active {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    /* NAV LINK */
+    .nav-menu a {
+        color: whitesmoke !important;
+        padding: 8px 0;
+        text-decoration: none;
+        transition: 0.25s;
+        font-size: 15px;
+        border-radius: 8px;
+    }
+
+    .nav-menu a:hover {
+        background: rgba(255, 255, 255, 0.18);
+    }
+
+
+    .footer-right {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-operasional {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo {
+        width: 120px;
+    }
+    .footer-desc {
+        text-align: center;
+    }
+}
