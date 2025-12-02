@@ -339,6 +339,29 @@ body {
 /* TAMPILAN MOBILE */
 @media (max-width: 768px) {
 
+    header {
+        padding: 10px 20px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo-TEFA img {
+        max-width: 130px;
+        height: auto;
+    }
+
+    .logo-TEFA {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-shrink: 1;
+    }
+
+    .burger {
+        margin-left: 0;
+        flex-shrink: 0;
+    }
+
     .card {
         max-width: 320px;
         margin: 0 auto 20px;
@@ -347,10 +370,6 @@ body {
 
     .card-body {
         min-height: 260px;
-    }
-
-    .burger {
-        display: flex;
     }
 
     /* MENU DEFAULT (tertutup) */
@@ -474,4 +493,5 @@ body {
     .footer-desc {
         text-align: center;
     }
+
 }
