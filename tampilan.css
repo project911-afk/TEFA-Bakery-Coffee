@@ -808,38 +808,60 @@ body {
    ============================ */
 @media (max-width: 768px) {
 
+  /* Grid 3 kolom */
   .product-grid,
   .drink-grid {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr) !important;
-    gap: 8px !important;
+    gap: 10px !important;
+    align-items: start;
   }
 
-  /* Ukuran card disesuaikan agar kecil */
+  /* Card agar proporsional */
   .card,
   .drink-card {
-    padding: 8px !important;
-    border-radius: 10px !important;
+    padding: 10px !important;
+    border-radius: 12px !important;
+    background: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
   }
 
-  /* Ukuran gambar diperkecil */
-  .img-circle img,
+  /* Gambar proporsional */
+  .img-circle,
   .drink-card img {
-    width: 55px !important;
-    height: 55px !important;
+    width: 65px !important;
+    height: 65px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
   }
 
-  /* Judul lebih kecil */
+  .img-circle img {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  /* Judul menu */
   .card h3,
   .drink-card h4 {
-    font-size: 12px !important;
-    line-height: 1.2;
+    font-size: 13px !important;
+    font-weight: 600;
+    margin: 0;
+    line-height: 15px;
+    text-align: center;
   }
 
-  /* Harga kecil */
+  /* Harga */
   .price,
   .drink-card p {
-    font-size: 11px !important;
+    font-size: 12px !important;
+    margin: 0;
+    color: #444;
   }
 }
 
@@ -847,7 +869,23 @@ body {
 @media (max-width: 480px) {
   .product-grid,
   .drink-grid {
-    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 8px !important;
+  }
+
+  .img-circle,
+  .drink-card img {
+    width: 58px !important;
+    height: 58px !important;
+  }
+
+  .card h3,
+  .drink-card h4 {
+    font-size: 12px !important;
+  }
+
+  .price,
+  .drink-card p {
+    font-size: 11px !important;
   }
 }
 
