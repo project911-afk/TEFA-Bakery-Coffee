@@ -339,14 +339,16 @@ body {
 /* TAMPILAN MOBILE */
 @media (max-width: 768px) {
     header {
+        flex-wrap: nowrap !important; 
         display: flex !important;
         flex-direction: row !important;
         align-items: center !important;
         justify-content: space-between !important;
-        padding: 10px 16px !important;
+        padding: 10px 20px !important;
     }
 
     .logo-TEFA {
+        flex-shrink: 1; 
         display: flex;
         align-items: center;
         gap: 8px;
@@ -354,12 +356,12 @@ body {
     }
 
     .logo-TEFA img {
-        max-width: 45px; 
+        max-width: 38px; 
         height: auto;
     }
 
     .fs-4 {
-        font-size: 18px; 
+        font-size: 16px; 
         white-space: nowrap;
     }
 
@@ -502,4 +504,5 @@ body {
     }
 
 }
+
 
