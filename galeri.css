@@ -332,28 +332,8 @@ body {
 
 
 @media (max-width: 768px) {
-
-    header {
-        padding: 10px 20px;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .logo-TEFA img {
-        max-width: 130px;
-        height: auto;
-    }
-
-    .logo-TEFA {
+.burger {
         display: flex;
-        align-items: center;
-        gap: 8px;
-        flex-shrink: 1;
-    }
-
-    .burger {
-        margin-left: 0;
-        flex-shrink: 0;
     }
 
     /* MENU DEFAULT (tertutup) */
@@ -366,9 +346,8 @@ body {
         width: 210px;
         padding: 18px;
 
-        /* ✨ Clean soft glassmorphism */
-        background: rgba(12, 170, 90, 0.90);        /* hijau solid dengan sedikit transparan */
-        backdrop-filter: blur(8px);                 /* efek blur lembut */
+        background: rgba(12, 170, 90, 0.90);
+        backdrop-filter: blur(8px);
         border-radius: 14px;
 
         opacity: 0;
@@ -376,7 +355,7 @@ body {
         pointer-events: none;
 
         transition: opacity 0.25s ease, transform 0.25s ease;
-        box-shadow: 0 4px 14px rgba(0,0,0,0.20);
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.20);
     }
 
     /* MENU SAAT AKTIF */
@@ -388,7 +367,7 @@ body {
 
     /* NAV LINK */
     .nav-menu a {
-        color: white !important;
+        color: whitesmoke !important;
         padding: 8px 0;
         text-decoration: none;
         transition: 0.25s;
@@ -422,4 +401,5 @@ body {
         width: 120px;
     }
 }
+
 
