@@ -488,7 +488,6 @@ body {
 
     .footer-operasional {
         flex-direction: column;
-
         text-align: center;
     }
 
@@ -500,6 +499,7 @@ body {
         width: 120px;
     }
 }
+
 
 
 
