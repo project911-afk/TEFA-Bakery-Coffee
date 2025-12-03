@@ -813,39 +813,55 @@ body {
     }
 }
 
-/* =========================================
-   FIX 3 KOLOM MOBILE – PRIORITAS TERTINGGI
-   ========================================= */
+/* ============================
+   FIX 3 KOLOM DI MOBILE (HP)
+   ============================ */
 @media (max-width: 768px) {
+
   .product-grid,
   .drink-grid {
+    display: grid !important;
     grid-template-columns: repeat(3, 1fr) !important;
     gap: 8px !important;
   }
 
-  .img-circle,
+  /* Ukuran card disesuaikan agar kecil */
+  .card,
+  .drink-card {
+    padding: 8px !important;
+    border-radius: 10px !important;
+  }
+
+  /* Ukuran gambar diperkecil */
+  .img-circle img,
   .drink-card img {
     width: 55px !important;
     height: 55px !important;
   }
 
-  .card,
-  .drink-card {
-    padding: 8px !important;
-  }
-
+  /* Judul lebih kecil */
   .card h3,
   .drink-card h4 {
     font-size: 12px !important;
+    line-height: 1.2;
+  }
+
+  /* Harga kecil */
+  .price,
+  .drink-card p {
+    font-size: 11px !important;
   }
 }
 
+/* HP kecil (≤480px) tetap 3 kolom */
 @media (max-width: 480px) {
   .product-grid,
   .drink-grid {
     grid-template-columns: repeat(3, 1fr) !important;
   }
 }
+
+
 
 
 
