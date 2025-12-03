@@ -17,9 +17,7 @@ html, body {
 }
 
 
-/* ========================= */
-/*      ANIMASI BURGER       */
-/* ========================= */
+/* ANIMASI BURGER */
 
 .burger {
     width: 32px;
@@ -56,10 +54,7 @@ html, body {
     transform: translateY(-10px) rotate(-45deg);
 }
 
-/* ========================= */
-/*          HEADER           */
-/* ========================= */
-
+/* HEADER */
 header {
     position: fixed;
     top: 0;
@@ -113,19 +108,11 @@ body {
     gap: 5px;
 }
 
-/* ========================== */
-/*     HEADER MOBILE FIX      */
-/* ========================== */
-
 .logo-TEFA {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-
-/* ========================= */
-/*      RESPONSIVE BURGER    */
-/* ========================= */
 
 @media (max-width: 768px) {
 
@@ -163,7 +150,7 @@ body {
 /* Body */
 body {
     background-color: #F0EBD3;
-    padding-top: 50px;   /* → Sesuaikan dengan tinggi header */
+    padding-top: 50px;   
 }
 
 /* Text Colors */
@@ -322,9 +309,7 @@ body {
     font-weight: 700;
 }
 
-/* ========================= */
-/*         FOOTER FIX        */
-/* ========================= */
+/* FOOTER */
 .sip-footer {
     opacity: 0;
     transition: opacity 1s ease;
@@ -428,10 +413,6 @@ body {
 }
 
 /* TAMPILAN MOBILE */
-/* ========================= */
-/*   MOBILE RESPONSIVE FIX   */
-/* ========================= */
-
 @media (max-width: 768px) {
 
     /* HEADER */
@@ -555,26 +536,24 @@ body {
         font-size: 15px;
     }
 
-    /* MENU FAVORIT */
-    /* MENU FAVORIT - CARD HORIZONTAL */
+ /* MENU FAVORITE */
 .row-menu {
     display: flex !important;
-    flex-direction: row !important;  /* horizontal */
-    flex-wrap: nowrap !important;    /* biar tidak turun ke bawah */
-    overflow-x: auto;                /* scroll horizontal */
+    flex-direction: row !important;  
+    flex-wrap: nowrap !important;   
+    overflow-x: auto;               
     gap: 20px !important;
     padding-bottom: 10px;
-    scroll-snap-type: x mandatory;   /* efek snap rapi */
-}
+    scroll-snap-type: x mandatory;  
 
 .menu-card {
-    flex: 0 0 75%;                  /* lebar card 75% layar */
+    flex: 0 0 75%;                  
     max-width: 280px;
     background: white;
     border-radius: 18px;
     padding: 25px;
     box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
-    scroll-snap-align: center;      /* tiap card berhenti di tengah */
+    scroll-snap-align: center;     
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -633,6 +612,7 @@ body {
         text-align: center !important;
     }
 }
+
 
 
 
