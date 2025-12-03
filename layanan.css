@@ -405,45 +405,6 @@ body {
         padding: 8px 0;
     }
 
-    /* ================= NAV MENU ================= */
-    .nav-menu {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        right: 16px;
-        width: 220px;
-
-        padding: 18px;
-        background: rgba(12, 170, 90, 0.92);
-        backdrop-filter: blur(6px);
-        border-radius: 14px;
-
-        opacity: 0;
-        transform: translateY(-12px);
-        pointer-events: none;
-        transition: 0.25s ease;
-        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.20);
-    }
-
-    .nav-menu.active {
-        opacity: 1;
-        transform: translateY(0);
-        pointer-events: auto;
-    }
-
-    .nav-menu a {
-        color: #fff !important;
-        padding: 10px 0;
-        font-size: 15px;
-        border-radius: 6px;
-        transition: 0.25s;
-    }
-
-    .nav-menu a:hover {
-        background: rgba(255, 255, 255, 0.20);
-    }
-
     /* ================= CARD ================= */
     .card {
         max-width: 330px;
@@ -527,6 +488,7 @@ body {
         width: 120px;
     }
 }
+
 
 
 
