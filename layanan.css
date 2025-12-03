@@ -480,26 +480,29 @@ body {
 
     .footer-container {
         flex-direction: column !important;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        gap: 40px; /* supaya rapi */
+        align-items: center !important;
+        text-align: center !important;
+        gap: 40px;
     }
 
+    /* Semua section full width dan ke tengah */
     .footer-left,
     .footer-right,
+    .footer-kontak,
     .footer-operasional {
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        align-items: center !important;
+        text-align: center !important;
     }
 
+    /* Logo mengecil di mobile */
     .footer-logo {
         width: 120px;
     }
 }
+
 
 
 
