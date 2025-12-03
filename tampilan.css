@@ -604,10 +604,71 @@ body {
    
 /*RESPONSIVE (BOOTSTRAP OVERRIDES)*/
 @media (max-width: 768px) {
-  .header-container {
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-  }
+  header {
+        padding: 10px 18px !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
+
+    .logo-TEFA {
+        display: flex !important;
+        align-items: center !important;
+        gap: 6px !important;
+        max-width: 70%;
+    }
+
+    .logo-TEFA img {
+        width: 38px !important;
+        height: auto;
+    }
+
+    .logo-TEFA span {
+        font-size: 15px !important;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+
+    /* BURGER BUTTON */
+    .burger {
+        display: flex !important;
+        width: 28px;
+        height: 24px;
+    }
+
+    .burger span {
+        height: 3px;
+    }
+
+    /* MENU DROPDOWN */
+    .nav-menu {
+        position: absolute;
+        top: 65px;
+        right: 18px;
+        width: 190px;
+        padding: 15px;
+        background: rgba(12, 170, 90, 0.95);
+        border-radius: 12px;
+
+        flex-direction: column;
+        gap: 8px;
+
+        opacity: 0;
+        transform: translateY(-10px);
+        pointer-events: none;
+        transition: 0.25s;
+    }
+
+    .nav-menu.active {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    .nav-menu a {
+        font-size: 14px !important;
+        padding: 8px 0;
+    }
   .hero-content {
     flex-direction: column;
     text-align: center;
@@ -888,6 +949,7 @@ body {
     font-size: 11px !important;
   }
 }
+
 
 
 
