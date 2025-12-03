@@ -704,34 +704,38 @@ body {
     }
 
     /* MAKANAN - GRID & CARD */
-    .content-section {
-        padding: 10px 15px !important;
-        margin-bottom: 35px;
-    }
-
+    /* Grid makanan */
     .product-grid {
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 15px !important;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 12px !important;
     }
 
-    .card {
-        padding: 15px !important;
-        border-radius: 22px !important;
-        width: 100% !important;
+    /* Grid minuman */
+    .drink-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 12px !important;
+    }
+
+    /* Card agar tidak kepanjangan */
+    .card,
+    .drink-card {
+        padding: 12px !important;
     }
 
     .img-circle {
-        width: 100px !important;
-        height: 100px !important;
+        width: 70px !important;
+        height: 70px !important;
     }
 
-    .card h3 {
-        font-size: 16px !important;
-        min-height: auto !important;
+    .card h3,
+    .drink-card h4 {
+        font-size: 14px !important;
     }
 
     .price {
-        font-size: 14px !important;
+        font-size: 13px !important;
     }
 
     /* MINUMAN */
@@ -810,6 +814,7 @@ body {
         font-size: 15px !important;
     }
 }
+
 
 
 
