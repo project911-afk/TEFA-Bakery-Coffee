@@ -813,6 +813,42 @@ body {
     }
 }
 
+/* =========================================
+   FIX 3 KOLOM MOBILE – PRIORITAS TERTINGGI
+   ========================================= */
+@media (max-width: 768px) {
+  .product-grid,
+  .drink-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 8px !important;
+  }
+
+  .img-circle,
+  .drink-card img {
+    width: 55px !important;
+    height: 55px !important;
+  }
+
+  .card,
+  .drink-card {
+    padding: 8px !important;
+  }
+
+  .card h3,
+  .drink-card h4 {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid,
+  .drink-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+
+
 
 
 
