@@ -868,31 +868,59 @@ body {
 /* ========================= */
 @media (max-width: 768px) {
 
-    /* --- BURGER BUTTON ACTIVE --- */
-    .burger {
-        display: flex;
+    header {
+        padding: 10px 18px !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
     }
 
-    /* --- NAV MENU MOBILE --- */
-    .nav-menu {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 75px;
-        right: 20px;
-        width: 220px;
-        padding: 16px;
-        gap: 15px;
+    .logo-TEFA {
+        display: flex !important;
+        align-items: center !important;
+        gap: 6px !important;
+        max-width: 70%;
+    }
 
-        background: rgba(12,170,90,0.90);
-        backdrop-filter: blur(8px);
-        border-radius: 14px;
+    .logo-TEFA img {
+        width: 38px !important;
+        height: auto;
+    }
+
+    .logo-TEFA span {
+        font-size: 15px !important;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+
+    /* BURGER BUTTON */
+    .burger {
+        display: flex !important;
+        width: 28px;
+        height: 24px;
+    }
+
+    .burger span {
+        height: 3px;
+    }
+
+    /* MENU DROPDOWN */
+    .nav-menu {
+        position: absolute;
+        top: 65px;
+        right: 18px;
+        width: 190px;
+        padding: 15px;
+        background: rgba(12, 170, 90, 0.95);
+        border-radius: 12px;
+
+        flex-direction: column;
+        gap: 8px;
 
         opacity: 0;
-        transform: translateY(-12px);
+        transform: translateY(-10px);
         pointer-events: none;
-        transition: 0.25s ease;
-        box-shadow: 0 4px 14px rgba(0,0,0,0.20);
+        transition: 0.25s;
     }
 
     .nav-menu.active {
@@ -902,11 +930,9 @@ body {
     }
 
     .nav-menu a {
-        color: white !important;
-        text-align: right;
+        font-size: 14px !important;
         padding: 8px 0;
     }
-
     /* --- HERO MOBILE --- */
     .hero-content {
         flex-direction: column;
@@ -943,4 +969,5 @@ body {
         text-align: center;
     }
 }
+
 
