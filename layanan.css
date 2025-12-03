@@ -478,6 +478,13 @@ body {
         width: 100%;           /* Full width agar rapi */
     }
 
+    .footer-container {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 40px;
+    }
+
     .footer-right {
         justify-content: center;
         align-items: center;
@@ -488,7 +495,6 @@ body {
 
     .footer-operasional {
         flex-direction: column;
-
         text-align: center;
     }
 
@@ -500,6 +506,7 @@ body {
         width: 120px;
     }
 }
+
 
 
 
