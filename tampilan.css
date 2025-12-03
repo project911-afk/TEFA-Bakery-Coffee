@@ -631,44 +631,52 @@ body {
     grid-template-columns: 1fr;
   }
 }
-
-/* ========================= */
-/*      RESPONSIVE MOBILE    */
-/* ========================= */
 /* ============================= */
 /*   MOBILE FIX – CONTENT ONLY   */
 /* ============================= */
 @media (max-width: 768px) {
 
     /* Anti overflow isi konten */
+    body, html {
+        overflow-x: hidden !important;
+        max-width: 100% !important;
+    }
+
     .header-container,
     .hero-content,
-    .category-buttons,
     .content-section,
     .minuman-wrapper,
     .product-grid,
-    .drink-grid {
+    .drink-grid,
+    .category-buttons {
         max-width: 100% !important;
         overflow-x: hidden !important;
         padding-left: 15px !important;
         padding-right: 15px !important;
     }
 
-    /* Hero text */
+    /* HERO SECTION */
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 15px !important;
+        gap: 15px;
+    }
+
     .hero-text h1 {
-        font-size: 40px !important;
-        line-height: 42px !important;
-        text-align: left !important;
+        font-size: 42px !important;
+        line-height: 45px !important;
+        margin-bottom: 10px;
     }
 
     .hero-text p {
         font-size: 16px !important;
+        margin-top: 5px;
     }
 
-    /* Hero circle */
     .hero-circle {
-        width: 70vw;
-        max-width: 250px;
+        width: 65vw;
+        max-width: 230px;
         height: auto !important;
         margin: 0 auto;
     }
@@ -676,85 +684,133 @@ body {
     .hero-circle img {
         width: 100%;
         height: auto;
-        object-fit: cover;
         border-radius: 50%;
+        object-fit: cover;
     }
 
-    /* Tombol kategori (makanan/minuman) */
+    /* CATEGORY BUTTONS */
     .category-buttons {
-        display: flex;
         flex-wrap: wrap;
         gap: 12px;
+        padding: 0 10px !important;
         margin-bottom: 25px;
-        justify-content: center;
     }
 
     .cat-btn {
-        flex: 1 1 45%;
+        flex: 1 1 48%;
         padding: 12px 0;
         font-size: 18px;
         border-radius: 12px;
     }
 
-    /* Grid makanan (card 2 kolom) */
+    /* MAKANAN - GRID & CARD */
+    .content-section {
+        padding: 10px 15px !important;
+        margin-bottom: 35px;
+    }
+
     .product-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 15px !important;
     }
 
     .card {
         padding: 15px !important;
-        border-radius: 20px;
+        border-radius: 22px !important;
         width: 100% !important;
     }
 
-    .img-circle img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
+    .img-circle {
+        width: 100px !important;
+        height: 100px !important;
     }
 
-    /* Filter minuman */
+    .card h3 {
+        font-size: 16px !important;
+        min-height: auto !important;
+    }
+
+    .price {
+        font-size: 14px !important;
+    }
+
+    /* MINUMAN */
     .filter-pills {
-        gap: 15px !important;
-        justify-content: center;
         flex-wrap: wrap;
+        gap: 12px !important;
+        padding: 0 10px;
     }
 
     .pill {
-        padding: 10px 20px !important;
-        font-size: 16px !important;
-        border-radius: 20px !important;
+        padding: 10px 18px !important;
+        font-size: 15px !important;
     }
 
-    /* Grid minuman */
     .drink-grid {
-        display: grid;
         grid-template-columns: repeat(2, 1fr) !important;
-        gap: 15px;
-        width: 100%;
+        gap: 15px !important;
     }
 
     .drink-card {
         padding: 15px !important;
-        border-radius: 18px !important;
-        width: 100% !important;
+        border-radius: 18px;
     }
 
     .drink-card.wide {
-        grid-column: span 2;
+        grid-column: span 2 !important;
     }
 
-    /* Anti overflow untuk gambar & elemen konten */
+    .drink-card h4 {
+        font-size: 16px !important;
+    }
+
+    .drink-card p {
+        font-size: 14px !important;
+    }
+
+    /* Anti overflow semua gambar & card */
     img,
-    .product-grid,
-    .drink-grid,
     .card,
-    .drink-card {
+    .drink-card,
+    .product-grid,
+    .drink-grid {
         max-width: 100% !important;
     }
 }
+
+/* ===== PHONE SIZE < 480px ===== */
+@media (max-width: 480px) {
+
+    .hero-text h1 {
+        font-size: 32px !important;
+        line-height: 36px !important;
+    }
+
+    .hero-circle {
+        width: 70vw;
+        max-width: 200px;
+    }
+
+    .product-grid,
+    .drink-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .cat-btn {
+        flex: 1 1 100%;
+        font-size: 16px !important;
+    }
+
+    .img-circle {
+        width: 90px !important;
+        height: 90px !important;
+    }
+
+    .card h3 {
+        font-size: 15px !important;
+    }
+}
+
 
 
 
