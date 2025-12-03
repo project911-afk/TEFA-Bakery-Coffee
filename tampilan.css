@@ -743,8 +743,6 @@ body {
 /*      RESPONSIVE MOBILE    */
 /* ========================= */
 @media (max-width: 768px) {
-
-    /* --- BURGER BUTTON ACTIVE --- */
     header {
         padding: 10px 18px !important;
         flex-direction: row !important;
@@ -846,3 +844,4 @@ body {
         text-align: center;
     }
 }
+
