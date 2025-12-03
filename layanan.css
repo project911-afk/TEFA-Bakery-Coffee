@@ -478,68 +478,31 @@ body {
         width: 100%;           /* Full width agar rapi */
     }
 
-    /* Pastikan parent tidak punya padding/offset yg bikin bergeser */
-  .footer-container,
-  .sip-footer .footer-container {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    text-align: center !important;
-    padding: 40px 20px !important;   /* ruang kiri/kanan yg konsisten */
-    margin: 0 auto !important;
-    box-sizing: border-box !important;
-    width: 100% !important;
-    max-width: 100% !important;
-  }
+    .footer-container {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 40px;
+    }
 
-  /* Pastikan setiap section mengambil full width tapi isinya center */
-  .footer-left,
-  .footer-right,
-  .footer-section,
-  .footer-kontak,
-  .footer-operasional {
-    width: 100% !important;
-    max-width: 720px;               /* supaya tidak melebar terlalu jauh di tablet */
-    margin: 0 auto !important;      /* center container */
-    padding: 0 12px !important;     /* spacing dalam */
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
-    box-sizing: border-box !important;
-  }
+    /* Semua section full width dan ke tengah */
+    .footer-left,
+    .footer-right,
+    .footer-kontak,
+    .footer-operasional {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        text-align: center !important;
+    }
 
-  /* Logo benar-benar tengah */
-  .footer-logo {
-    display: block !important;
-    margin: 0 auto !important;
-    width: 120px !important;
-    height: auto !important;
-  }
-
-  /* Hapus margin/offset yang tidak sengaja dari heading / paragraph */
-  .footer-title,
-  .footer-heading,
-  .footer-desc,
-  .footer-kontak p,
-  .footer-operasional p {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    margin-top: 8px !important;
-    margin-bottom: 8px !important;
-  }
-
-  /* Jika ada class global seperti .container (Bootstrap) yang menambahkan padding,
-     override supaya tidak mendorong konten ke kanan */
-  .sip-footer .container,
-  .sip-footer .row {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
+    /* Logo mengecil di mobile */
+    .footer-logo {
+        width: 120px;
+    }
 }
+
 
 
 
