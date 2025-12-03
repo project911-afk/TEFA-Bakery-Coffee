@@ -556,27 +556,54 @@ body {
     }
 
     /* MENU FAVORIT */
-    .row-menu {
-        flex-direction: column;
-        gap: 35px !important;
-    }
+    /* MENU FAVORIT - CARD HORIZONTAL */
+.row-menu {
+    display: flex !important;
+    flex-direction: row !important;  /* horizontal */
+    flex-wrap: nowrap !important;    /* biar tidak turun ke bawah */
+    overflow-x: auto;                /* scroll horizontal */
+    gap: 20px !important;
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory;   /* efek snap rapi */
+}
 
-    .menu-card {
-        width: 85% !important;
-        height: auto !important;
-        padding: 25px;
-        margin: auto;
-    }
+.menu-card {
+    flex: 0 0 75%;                  /* lebar card 75% layar */
+    max-width: 280px;
+    background: white;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+    scroll-snap-align: center;      /* tiap card berhenti di tengah */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    .menu-img {
-        width: 120px !important;
-        height: 110px;
-    }
+/* Gambar menu */
+.menu-img {
+    width: 120px !important;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    .menu-img img {
-        width: 150px !important;
-        height: auto;
-    }
+.menu-img img {
+    width: 150px !important;
+    height: auto;
+}
+
+/* Text di dalam card */
+.menu-card h5 {
+    margin-top: 15px;
+    font-size: 18px !important;
+}
+
+.menu-card p {
+    font-size: 14px !important;
+}
+
 
     /* FOOTER FIX */
     .footer-container {
@@ -606,6 +633,7 @@ body {
         text-align: center !important;
     }
 }
+
 
 
 
