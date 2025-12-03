@@ -704,7 +704,6 @@ body {
     }
 
     /* MAKANAN - GRID & CARD */
-    /* Grid makanan */
     .product-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr) !important;
@@ -814,6 +813,7 @@ body {
         font-size: 15px !important;
     }
 }
+
 
 
 
