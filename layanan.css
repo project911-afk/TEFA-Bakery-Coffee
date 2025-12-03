@@ -484,17 +484,16 @@ body {
         justify-content: center;
         align-items: center; 
         text-align: center;
-        gap: 30px; /* jarak antar bagian */
+        gap: 30px;
     }
 
-    /* Footer kiri benar-benar center */
     .footer-left {
         display: flex;
         flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
         text-align: center !important;
-        gap: 8px !important;  /* kecilkan gap */
+        gap: 8px !important;
         flex: unset !important;
         min-width: unset !important;
         width: 100% !important;
@@ -511,7 +510,6 @@ body {
         margin: 0 auto !important;
     }
 
-    /* Footer kanan ikut center juga */
     .footer-right,
     .footer-kontak,
     .footer-operasional {
@@ -520,6 +518,7 @@ body {
         align-items: center;
     }
 }
+
 
 
 
