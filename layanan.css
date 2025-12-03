@@ -338,170 +338,161 @@ body {
 
 /* TAMPILAN MOBILE */
 @media (max-width: 768px) {
+
+    /* ================= HEADER ================= */
     header {
-        flex-wrap: nowrap !important; 
         display: flex !important;
-        flex-direction: row !important;
+        flex-wrap: nowrap !important;
         align-items: center !important;
         justify-content: space-between !important;
-        padding: 10px 20px !important;
+        padding: 10px 16px !important;
     }
 
     .logo-TEFA {
-        flex-shrink: 1; 
         display: flex;
         align-items: center;
-        gap: 2px;
-        flex: 0 1 auto;
+        gap: 6px; /* konsisten */
+        flex-shrink: 1;
     }
 
     .logo-TEFA img {
-        max-width: 38px; 
+        width: 40px;  /* ukuran konsisten */
         height: auto;
     }
 
     .fs-4 {
-        font-size: 12px; 
+        font-size: 14px; 
         white-space: nowrap;
-        margin-right: 6px;
     }
 
     .burger {
         display: flex !important;
         flex-shrink: 0;
-        margin-left: auto !important;
     }
 
-    .card {
-        max-width: 320px;
-        margin: 0 auto 20px;
-        transform: none;
-    }
-
-    .card-body {
-        min-height: 260px;
-    }
-
-    /* MENU DEFAULT (tertutup) */
+    /* ================= NAV MENU ================= */
     .nav-menu {
         display: flex;
         flex-direction: column;
         position: absolute;
         top: 70px;
-        right: 20px;
-        width: 210px;
-        padding: 18px;
+        right: 16px;
+        width: 220px;
 
-        background: rgba(12, 170, 90, 0.90);
-        backdrop-filter: blur(8px);
+        padding: 18px;
+        background: rgba(12, 170, 90, 0.92);
+        backdrop-filter: blur(6px);
         border-radius: 14px;
 
         opacity: 0;
         transform: translateY(-12px);
         pointer-events: none;
-
-        transition: opacity 0.25s ease, transform 0.25s ease;
+        transition: 0.25s ease;
         box-shadow: 0 4px 14px rgba(0, 0, 0, 0.20);
     }
 
-    /* MENU SAAT AKTIF */
     .nav-menu.active {
         opacity: 1;
         transform: translateY(0);
         pointer-events: auto;
     }
 
-    /* NAV LINK */
     .nav-menu a {
-        color: whitesmoke !important;
-        padding: 8px 0;
-        text-decoration: none;
-        transition: 0.25s;
+        color: #fff !important;
+        padding: 10px 0;
         font-size: 15px;
-        border-radius: 8px;
+        border-radius: 6px;
+        transition: 0.25s;
     }
 
     .nav-menu a:hover {
-        background: rgba(255, 255, 255, 0.18);
+        background: rgba(255, 255, 255, 0.20);
     }
 
+    /* ================= CARD ================= */
+    .card {
+        max-width: 330px;
+        margin: 0 auto 24px;
+        transform: none;
+        border-radius: 14px;
+    }
+
+    .card-body {
+        min-height: 240px;
+        padding: 16px;
+    }
+
+    /* ================= FAQ ================= */
     .accordion {
         max-width: 340px;
-        /* tidak terlalu lebar */
         margin: 0 auto;
-        /* center */
     }
 
-    /* Card FAQ menjadi lebih compact */
     .accordion-item {
         border-radius: 10px;
+        margin-bottom: 12px;
         overflow: hidden;
-        margin-bottom: 10px;
     }
 
     .accordion-button {
-        font-size: 14px;
-        /* teks judul mengecil */
-        padding: 12px 16px;
+        font-size: 15px;
+        padding: 14px 16px;
     }
 
     .accordion-body {
         font-size: 14px;
-        /* isi FAQ mengecil */
-        padding: 12px 16px;
+        padding: 14px 16px;
     }
 
-    /* FORMULIR */
+    /* ================= FORM ================= */
     .color {
-        max-width: 340px;     /* Membuat form lebih kecil */
-        margin: 0 auto;        /* Center */
-        padding: 18px;         /* Kurangi padding supaya tidak terlalu besar */
-        border-radius: 12px;   /* Tampilan lebih rapi */
+        max-width: 340px;
+        margin: 0 auto;
+        padding: 20px 18px;
+        border-radius: 12px;
     }
 
     .formulir {
-        font-size: 22px;       /* Judul formular lebih kecil */
+        font-size: 22px;
+        text-align: center;
     }
 
     .isi {
-        font-size: 12px;       /* Subjudul lebih nyaman dibaca */
-        margin-top: -20px;
+        font-size: 13px;
+        text-align: center;
+        margin-top: -10px;
+        margin-bottom: 16px;
     }
 
     .form-control {
-        padding: 8px 10px;     /* Input lebih compact */
         font-size: 14px;
+        padding: 10px 12px;
+        border-radius: 8px;
     }
 
     .btn-primary {
-        padding: 10px 14px;    /* Tombol mengecil */
-        font-size: 14px;
-        width: 100%;           /* Full width agar rapi */
+        font-size: 15px;
+        padding: 10px;
+        width: 100%;
+        border-radius: 8px;
     }
 
-    .footer-right {
+    /* ================= FOOTER ================= */
+    .footer-left,
+    .footer-right,
+    .footer-operasional {
+        text-align: center;
+        flex-direction: column !important;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-    }
-
-    .footer-operasional {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-left {
-        flex-direction: column;
-        text-align: center;
+        gap: 16px;
     }
 
     .footer-logo {
         width: 120px;
-        align-items: center;
     }
 }
+
 
 
 
