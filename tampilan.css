@@ -615,22 +615,12 @@ body {
   .hero-text {
     margin-bottom: 20px;
   }
-  .product-grid,
-  .drink-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
   .footer-right {
     justify-content: flex-start;
     margin-top: 20px;
   }
 }
 
-@media (max-width: 480px) {
-  .product-grid,
-  .drink-grid {
-    grid-template-columns: 1fr;
-  }
-}
 /* ============================= */
 /*   MOBILE FIX – CONTENT ONLY   */
 /* ============================= */
@@ -860,6 +850,7 @@ body {
     grid-template-columns: repeat(3, 1fr) !important;
   }
 }
+
 
 
 
