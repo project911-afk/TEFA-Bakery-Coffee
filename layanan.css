@@ -478,46 +478,29 @@ body {
         width: 100%;           /* Full width agar rapi */
     }
 
-    .footer-container {
-        display: flex;
-        flex-direction: column;
+    .footer-right {
         justify-content: center;
-        align-items: center; 
+        align-items: center;
+        flex-direction: column;
         text-align: center;
-        gap: 30px;
+        gap: 20px;
+    }
+
+    .footer-operasional {
+        flex-direction: column;
+
+        text-align: center;
     }
 
     .footer-left {
-        display: flex;
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
-        text-align: center !important;
-        gap: 8px !important;
-        flex: unset !important;
-        min-width: unset !important;
-        width: 100% !important;
+        flex-direction: column;
     }
 
     .footer-logo {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    }
-
-    .footer-text {
-        width: 100%;
-        text-align: center !important;
-        margin: 0 auto !important;
-    }
-
-    .footer-right,
-    .footer-kontak,
-    .footer-operasional {
-        width: 100%;
-        text-align: center;
-        align-items: center;
+        width: 120px;
     }
 }
+
 
 
 
