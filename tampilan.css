@@ -754,12 +754,12 @@ body {
         border-radius: 12px;
     }
 
-    .product-grid,
+    /* .product-grid,
     .drink-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr) !important;
-        gap: 8px !important; /* lebih rapat agar muat */
-    }
+        gap: 8px !important;
+    } */
 
     /* Card lebih kecil */
     .card,
@@ -799,10 +799,10 @@ body {
         font-size: 15px !important;
     }
 
-    .drink-grid {
+    /* .drink-grid {
         grid-template-columns: repeat(2, 1fr) !important;
         gap: 15px !important;
-    }
+    } */
 
     .drink-card {
         padding: 15px !important;
@@ -949,3 +949,4 @@ body {
     font-size: 11px !important;
   }
 }
+
