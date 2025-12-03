@@ -1,6 +1,3 @@
-/* =========================================
-   1. VARIABLES & GLOBAL
-   ========================================= */
 :root {
   --primary-green: #0caa5a;
   --dark-green: #06522c;
@@ -18,10 +15,7 @@
     font-family: "Poppins", sans-serif;
 }
 
-/* ========================= */
-/*      ANIMASI BURGER       */
-/* ========================= */
-
+/*ANIMASI BURGER MENU  */
 .burger {
     width: 32px;
     height: 28px;
@@ -44,7 +38,7 @@
     transition: 0.3s;
 }
 
-/* Animasi silang */
+/*ANIMASI SILANG MENEKAN BURGER*/
 .burger.open span:nth-child(1) {
     transform: translateY(10px) rotate(45deg);
 }
@@ -57,10 +51,7 @@
     transform: translateY(-10px) rotate(-45deg);
 }
 
-/* ========================= */
-/*          HEADER           */
-/* ========================= */
-
+/* HEADER */
 header {
     position: fixed;
     top: 0;
@@ -108,15 +99,11 @@ body {
     box-shadow: none !important;
 }
 
-/* NAV desktop */
+/* NAVIGASI DEKSTOP */
 .nav-menu {
     display: flex;
     gap: 5px;
 }
-
-/* ========================== */
-/*     HEADER MOBILE FIX      */
-/* ========================== */
 
 .logo-TEFA {
     display: flex;
@@ -125,7 +112,6 @@ body {
 }
 
 
-/*5. RESPONSIVE MEDIA QUERIES*/
 @media (max-width: 992px) {
   .hero-text h1 {
     font-size: 3.5rem;
@@ -249,15 +235,12 @@ body {
   border-radius: 50%;
 }
 
-/* ========================= */
-/*   CATEGORY MAIN BUTTONS   */
-/* ========================= */
-
+/* BUTTON */
 .category-buttons {
   display: flex;
   justify-content: center;
   gap: 25px;
-  margin: 40px auto;      /* Rapi dan proporsional */
+  margin: 40px auto;  
   padding-top: 10px;
   position: relative;
   z-index: 10;
@@ -682,12 +665,9 @@ body {
   }
 }
 
-/* ============================= */
-/*   MOBILE FIX – CONTENT ONLY   */
-/* ============================= */
+/* TAMPILAN MOBILE */
 @media (max-width: 768px) {
 
-    /* Anti overflow isi konten */
     body, html {
         overflow-x: hidden !important;
         max-width: 100% !important;
@@ -706,7 +686,7 @@ body {
         padding-right: 15px !important;
     }
 
-    /* HERO SECTION */
+    /* HERO */
     .hero-content {
         flex-direction: column;
         text-align: center;
@@ -761,14 +741,12 @@ body {
         gap: 8px !important;
     } */
 
-    /* Card lebih kecil */
     .card,
     .drink-card {
         padding: 8px !important;
         border-radius: 14px !important;
     }
 
-    /* Gambar diperkecil */
     .img-circle,
     .drink-card img {
         width: 60px !important;
@@ -821,7 +799,7 @@ body {
         font-size: 14px !important;
     }
 
-    /* Anti overflow semua gambar & card */
+
     img,
     .card,
     .drink-card,
@@ -831,7 +809,6 @@ body {
     }
 }
 
-/* ===== PHONE SIZE < 480px ===== */
 @media (max-width: 480px) {
 
     .hero-text h1 {
@@ -864,9 +841,7 @@ body {
     }
 }
 
-/* ============================
-   FIX 3 KOLOM DI MOBILE (HP)
-   ============================ */
+/* TAMPILAN 3 KOLOM MOBILE*/
 @media (max-width: 768px) {
 
   /* Grid 3 kolom */
@@ -878,7 +853,7 @@ body {
     align-items: start;
   }
 
-  /* Card agar proporsional */
+ /* CARD */
   .card,
   .drink-card {
     padding: 10px !important;
@@ -891,7 +866,7 @@ body {
     gap: 6px;
   }
 
-  /* Gambar proporsional */
+  /* GAMBAR */
   .img-circle,
   .drink-card img {
     width: 65px !important;
@@ -926,7 +901,7 @@ body {
   }
 }
 
-/* HP kecil (≤480px) tetap 3 kolom */
+/* HP KECILL */
 @media (max-width: 480px) {
   .product-grid,
   .drink-grid {
@@ -949,4 +924,5 @@ body {
     font-size: 11px !important;
   }
 }
+
 
