@@ -682,6 +682,187 @@ body {
   }
 }
 
+/* ============================= */
+/*   MOBILE FIX – CONTENT ONLY   */
+/* ============================= */
+@media (max-width: 768px) {
+
+    /* Anti overflow isi konten */
+    body, html {
+        overflow-x: hidden !important;
+        max-width: 100% !important;
+    }
+
+    .header-container,
+    .hero-content,
+    .content-section,
+    .minuman-wrapper,
+    .product-grid,
+    .drink-grid,
+    .category-buttons {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    /* HERO SECTION */
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 15px !important;
+        gap: 15px;
+    }
+
+    .hero-text h1 {
+        font-size: 42px !important;
+        line-height: 45px !important;
+        margin-bottom: 10px;
+    }
+
+    .hero-text p {
+        font-size: 16px !important;
+        margin-top: 5px;
+    }
+
+    .hero-circle {
+        width: 65vw;
+        max-width: 230px;
+        height: auto !important;
+        margin: 0 auto;
+    }
+
+    .hero-circle img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    /* CATEGORY BUTTONS */
+    .category-buttons {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 0 10px !important;
+        margin-bottom: 25px;
+    }
+
+    .cat-btn {
+        flex: 1 1 48%;
+        padding: 12px 0;
+        font-size: 18px;
+        border-radius: 12px;
+    }
+
+    .product-grid,
+    .drink-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 8px !important; /* lebih rapat agar muat */
+    }
+
+    /* Card lebih kecil */
+    .card,
+    .drink-card {
+        padding: 8px !important;
+        border-radius: 14px !important;
+    }
+
+    /* Gambar diperkecil */
+    .img-circle,
+    .drink-card img {
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+    /* Judul menu lebih kecil */
+    .card h3,
+    .drink-card h4 {
+        font-size: 12px !important;
+        line-height: 14px !important;
+    }
+
+    /* Harga */
+    .price {
+        font-size: 11px !important;
+    }
+
+    /* MINUMAN */
+    .filter-pills {
+        flex-wrap: wrap;
+        gap: 12px !important;
+        padding: 0 10px;
+    }
+
+    .pill {
+        padding: 10px 18px !important;
+        font-size: 15px !important;
+    }
+
+    .drink-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 15px !important;
+    }
+
+    .drink-card {
+        padding: 15px !important;
+        border-radius: 18px;
+    }
+
+    .drink-card.wide {
+        grid-column: span 2 !important;
+    }
+
+    .drink-card h4 {
+        font-size: 16px !important;
+    }
+
+    .drink-card p {
+        font-size: 14px !important;
+    }
+
+    /* Anti overflow semua gambar & card */
+    img,
+    .card,
+    .drink-card,
+    .product-grid,
+    .drink-grid {
+        max-width: 100% !important;
+    }
+}
+
+/* ===== PHONE SIZE < 480px ===== */
+@media (max-width: 480px) {
+
+    .hero-text h1 {
+        font-size: 32px !important;
+        line-height: 36px !important;
+    }
+
+    .hero-circle {
+        width: 70vw;
+        max-width: 200px;
+    }
+
+    .product-grid,
+    .drink-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .cat-btn {
+        flex: 1 1 100%;
+        font-size: 16px !important;
+    }
+
+    .img-circle {
+        width: 90px !important;
+        height: 90px !important;
+    }
+
+    .card h3 {
+        font-size: 15px !important;
+    }
+}
 
 /* ============================
    FIX 3 KOLOM DI MOBILE (HP)
@@ -768,6 +949,7 @@ body {
     font-size: 11px !important;
   }
 }
+
 
 
 
