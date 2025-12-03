@@ -253,32 +253,7 @@ body {
 
 @media (max-width: 768px) {
   /* Navbar Mobile */
-  .burger {
-    display: flex;
-  }
-
-  .nav-menu {
-    position: absolute;
-    top: 80px;
-    right: 0;
-    width: 100%;
-    background-color: var(--primary-green);
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0;
-    gap: 20px;
-    
-    /* Animasi Dropdown */
-    transform: translateY(-150%);
-    transition: transform 0.3s ease-in-out;
-    z-index: 999;
-  }
-
-  .nav-menu.active {
-    transform: translateY(0);
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-  }
-
+  
   /* Hero Section Mobile */
   .hero-content {
     flex-direction: column;
@@ -741,98 +716,7 @@ body {
 .footer-section a:hover {
     color: #0CAA5A;
 }
-
-
-@media (max-width: 768px) {
-
-   header {
-        padding: 10px 20px;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .logo-TEFA img {
-        max-width: 130px;
-        height: auto;
-    }
-
-    .logo-TEFA {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        flex-shrink: 1;
-    }
-
-    .burger {
-        margin-left: 0;
-        flex-shrink: 0;
-    }
-    /* MENU DEFAULT (tertutup) */
-    .nav-menu {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        right: 20px;
-        width: 210px;
-        padding: 18px;
-
-        /* ✨ Clean soft glassmorphism */
-        background: rgba(12, 170, 90, 0.90);        /* hijau solid dengan sedikit transparan */
-        backdrop-filter: blur(8px);                 /* efek blur lembut */
-        border-radius: 14px;
-
-        opacity: 0;
-        transform: translateY(-12px);
-        pointer-events: none;
-
-        transition: opacity 0.25s ease, transform 0.25s ease;
-        box-shadow: 0 4px 14px rgba(0,0,0,0.20);
-    }
-
-    /* MENU SAAT AKTIF */
-    .nav-menu.active {
-        opacity: 1;
-        transform: translateY(0);
-        pointer-events: auto;
-    }
-
-    /* NAV LINK */
-    .nav-menu a {
-        color: white !important;
-        padding: 8px 0;
-        text-decoration: none;
-        transition: 0.25s;
-        font-size: 15px;
-        border-radius: 8px;
-    }
-
-    .nav-menu a:hover {
-        background: rgba(255, 255, 255, 0.18);
-    }
-
-    .footer-right {
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-    }
-
-    .footer-operasional {
-        flex-direction: column;
-
-        text-align: center;
-    }
-
-    .footer-left {
-        flex-direction: column;
-    }
-
-    .footer-logo {
-        width: 120px;
-    }
-}
+   
 /*RESPONSIVE (BOOTSTRAP OVERRIDES)*/
 @media (max-width: 768px) {
   .header-container {
@@ -867,6 +751,11 @@ body {
 /*      RESPONSIVE MOBILE    */
 /* ========================= */
 @media (max-width: 768px) {
+   html, body {
+        overflow-x: hidden !important;
+        width: 100%;
+        position: relative;
+    }
 
     header {
         padding: 10px 18px !important;
@@ -934,26 +823,43 @@ body {
         padding: 8px 0;
     }
     /* --- HERO MOBILE --- */
+    /* Hero Section */
     .hero-content {
-        flex-direction: column;
-        text-align: center;
-        padding-top: 20px;
+        padding: 20px 20px !important;
     }
 
-    .hero-text h1 {
-        font-size: 3rem;
-        margin-bottom: 25px;
-    }
-
-    .hero-circle {
-        width: 220px;
-        height: 220px;
-    }
-
-    /* --- GRID PRODUK --- */
+    /* Grid produk */
     .product-grid,
     .drink-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 0 15px !important;
+    }
+
+    /* Card */
+    .card,
+    .drink-card {
+        padding: 15px;
+        border-radius: 25px;
+    }
+
+    /* Section container */
+    .content-section,
+    .minuman-wrapper {
+        padding: 15px !important;
+        margin: 0 auto;
+    }
+
+    /* Category buttons */
+    .category-buttons {
+        gap: 12px;
+        padding: 0 15px !important;
+        flex-wrap: wrap;
+    }
+
+    .cat-btn {
+        padding: 10px 28px;
+        font-size: 18px;
     }
 
     /* --- FOOTER MOBILE --- */
@@ -969,5 +875,6 @@ body {
         text-align: center;
     }
 }
+
 
 
