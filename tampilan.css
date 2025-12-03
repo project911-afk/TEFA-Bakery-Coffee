@@ -704,7 +704,6 @@ body {
     }
 
     /* MAKANAN - GRID & CARD */
-    /* Grid makanan */
     .product-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr) !important;
@@ -737,7 +736,6 @@ body {
     .price {
         font-size: 13px !important;
     }
-
     /* MINUMAN */
     .filter-pills {
         flex-wrap: wrap;
@@ -814,6 +812,7 @@ body {
         font-size: 15px !important;
     }
 }
+
 
 
 
