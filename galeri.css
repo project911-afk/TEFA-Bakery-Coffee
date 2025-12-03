@@ -332,7 +332,7 @@ body {
 
 
 @media (max-width: 768px) {
-.burger {
+    .burger {
         display: flex;
     }
 
@@ -378,7 +378,6 @@ body {
     .nav-menu a:hover {
         background: rgba(255, 255, 255, 0.18);
     }
-
     .footer-right {
         justify-content: center;
         align-items: center;
@@ -401,5 +400,6 @@ body {
         width: 120px;
     }
 }
+
 
 
