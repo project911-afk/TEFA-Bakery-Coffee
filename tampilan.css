@@ -795,23 +795,30 @@ body {
 
     .product-grid,
     .drink-grid {
-        grid-template-columns: 1fr !important;
+        gap: 6px !important;
     }
 
-    .cat-btn {
-        flex: 1 1 100%;
-        font-size: 16px !important;
+    .img-circle,
+    .drink-card img {
+        width: 52px !important;
+        height: 52px !important;
     }
 
-    .img-circle {
-        width: 90px !important;
-        height: 90px !important;
+    .card,
+    .drink-card {
+        padding: 6px !important;
     }
 
-    .card h3 {
-        font-size: 15px !important;
+    .card h3,
+    .drink-card h4 {
+        font-size: 11px !important;
+    }
+
+    .price {
+        font-size: 10px !important;
     }
 }
+
 
 
 
