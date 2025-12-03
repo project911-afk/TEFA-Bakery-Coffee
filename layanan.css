@@ -102,52 +102,6 @@ body {
     gap: 5px;
 }
 
-/* ========================== */
-/*     HEADER MOBILE FIX      */
-/* ========================== */
-
-.logo-TEFA {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-/* ========================= */
-/*      RESPONSIVE BURGER    */
-/* ========================= */
-
-@media (max-width: 768px) {
-
-    .burger {
-        display: flex;
-    }
-
-    .nav-menu {
-        display: none;
-        flex-direction: column;
-        background: #0CAA5A;
-        position: absolute;
-        top: 70px;
-        /* turun sedikit dari header */
-        right: 20px;
-        width: 220px;
-        padding: 15px;
-        border-radius: 10px;
-        z-index: 9999;
-        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
-    }
-
-    .nav-menu.active {
-        display: flex !important;
-    }
-
-    nav a {
-        display: block;
-        margin: 10px 0;
-        color: white;
-        text-align: right;
-    }
-}
 
 /* ========================= */
 /*         CARD LAYANAN      */
@@ -488,6 +442,7 @@ body {
         width: 120px;
     }
 }
+
 
 
 
