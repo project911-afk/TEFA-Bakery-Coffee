@@ -6,10 +6,7 @@
     font-family: "Poppins", sans-serif;
 }
 
-/* ========================= */
-/*      ANIMASI BURGER       */
-/* ========================= */
-
+/* ANIMASI BURGER */
 .burger {
     width: 32px;
     height: 28px;
@@ -32,7 +29,7 @@
     transition: 0.3s;
 }
 
-/* Animasi silang */
+/* ANIMASI SILANG */
 .burger.open span:nth-child(1) {
     transform: translateY(10px) rotate(45deg);
 }
@@ -45,10 +42,7 @@
     transform: translateY(-10px) rotate(-45deg);
 }
 
-/* ========================= */
-/*          HEADER           */
-/* ========================= */
-
+/* HEADER */
 header {
     position: fixed;
     top: 0;
@@ -98,15 +92,11 @@ body {
     box-shadow: none !important;
 }
 
-/* NAV desktop */
+/* NAVIGASI DEKSTOP */
 .nav-menu {
     display: flex;
     gap: 5px;
 }
-
-/* ========================== */
-/*     HEADER MOBILE FIX      */
-/* ========================== */
 
 .logo-TEFA {
     display: flex;
@@ -114,10 +104,7 @@ body {
     gap: 10px;
 }
 
-/* ========================= */
-/*      RESPONSIVE BURGER    */
-/* ========================= */
-
+/* RESPONSIVE BURGER */
 @media (max-width: 768px) {
 
     .burger {
@@ -130,7 +117,6 @@ body {
         background: #0CAA5A;
         position: absolute;
         top: 70px;
-        /* turun sedikit dari header */
         right: 20px;
         width: 220px;
         padding: 15px;
@@ -212,7 +198,7 @@ body {
     border-radius: 20px;
 }
 
-/*         SEJARAH           */
+/* SEJARAH */
 
 .sejarah {
     padding: 70px;
@@ -263,10 +249,7 @@ body {
     border-radius: 12px;
 }
 
-/*          LOKASI           */
-
-/* SECTION LOKASI */
-/* BACKGROUND */
+/* LOKASI */
 .lokasi {
     background: #06522C;
     padding: 50px;
@@ -282,7 +265,7 @@ body {
 
 }
 
-/* WRAP FLEX */
+/* UKURAN MAP */
 .lokasi-flex {
     display: flex;
     justify-content: space-between;
@@ -338,9 +321,7 @@ body {
 }
 
 
-/* ========================= */
-/*         FOOTER FIX        */
-/* ========================= */
+/* FOOTER */
 .sip-footer {
     opacity: 0;
     transition: opacity 1s ease;
@@ -444,7 +425,7 @@ body {
 }
 
 
-
+/* MOBILE */
 @media (max-width: 768px) {
 
     header {
@@ -513,7 +494,7 @@ body {
         padding: 8px 0;
     }
 
-    /* ===== HERO ===== */
+/* HERO MOBILE */
     .hero {
         flex-direction: column;
         text-align: center;
@@ -558,7 +539,7 @@ body {
     }
 
 
-    /* ===== SEJARAH ===== */
+    /* SEJARAH */
     .sejarah-card {
         width: 92%;
         margin: auto;
@@ -586,8 +567,7 @@ body {
     }
 
 
-    /* ===== LOKASI ===== */
-    /* Info-box jadi center */
+    /* LOKASI */
     .info-box {
         flex-direction: column;
         align-items: center !important;
@@ -608,12 +588,7 @@ body {
         line-height: 1.35;
     }
 
-    /* Teks jam operasional rapi */
-    .jam-text {
-        text-align: center !important;
-    }
-
-    /* Pecah baris jam operasional */
+    /* JAM*/
     .jam-text h4 {
         font-size: 16px;
         margin-bottom: 8px;
@@ -666,5 +641,6 @@ body {
     }
 
 }
+
 
 
