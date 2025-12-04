@@ -14,13 +14,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const burger = document.getElementById("burgerBtn");
     const navMenu = document.querySelector(".nav-menu");
 
-    // Toggle menu saat tombol ditekan
+    // TOGGLE MENU BUTTON
     burger.addEventListener("click", () => {
         navMenu.classList.toggle("active");
         burger.classList.toggle("open");
     });
 
-    // ✨ Auto close menu saat scroll
+    // AUTO CLOSE
     window.addEventListener("scroll", () => {
         if (navMenu.classList.contains("active")) {
             navMenu.classList.remove("active");
@@ -40,7 +40,7 @@ document.addEventListener("scroll", function () {
     }
 });
 
-// Animasi muncul saat scroll
+// ANIMASI MUNCUL SAAT SCROLL
 const cards = document.querySelectorAll(".card");
 
 function revealCards() {
@@ -57,3 +57,4 @@ function revealCards() {
 
 window.addEventListener("scroll", revealCards);
 window.addEventListener("load", revealCards);
+
