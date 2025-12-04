@@ -67,7 +67,7 @@ header {
 }
 
 body {
-    padding-top: 80px;
+    padding-top: 60px;
     background-color: #F0EBD3;
 }
 
@@ -150,7 +150,7 @@ body {
   background-repeat: no-repeat;
 
   position: relative;
-  padding: 20px 0 100px 0;
+  padding: 0px 0 100px 0;
   color: var(--white);
 
   border-bottom-left-radius: 50% 20%;
@@ -924,5 +924,6 @@ body {
     font-size: 11px !important;
   }
 }
+
 
 
